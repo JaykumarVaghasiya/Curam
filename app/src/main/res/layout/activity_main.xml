@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_100"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight=".8"
+            android:clickable="true"
+            android:fontFamily="@font/avenir"
+            android:padding="4dp"
+            android:text="@string/menu"
+            android:textColor="@color/green_400"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:fontFamily="@font/avenir_book"
+            android:gravity="start"
+            android:padding="4dp"
+            android:text="@string/jobs"
+            android:textColor="@color/green_400"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="0.2"
+            android:contentDescription="@string/notification"
+            android:padding="3dp"
+            android:src="@drawable/baseline_notifications_none_24" />
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcv"
+        style="@style/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:strokeColor="@android:color/transparent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/green_100"
+                    android:fontFamily="@font/avenir_book"
+                    android:gravity="center"
+                    android:text="@string/all"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:cornerRadius="4dp"
+                    app:strokeColor="@color/gray_100"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_book"
+                    android:gravity="center"
+                    android:text="@string/live_in"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:cornerRadius="4dp"
+                    app:strokeColor="@color/gray_100"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_book"
+                    android:gravity="center"
+                    android:text="@string/overnight"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
+                    app:cornerRadius="4dp"
+                    app:strokeColor="@color/gray_100"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_book"
+                    android:gravity="center"
+                    android:text="@string/hourly"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:cornerRadius="4dp"
+                    app:strokeColor="@color/gray_100"
+                    app:strokeWidth="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green_300"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="1dp"
+                    app:cardUseCompatPadding="true"
+                    app:strokeColor="@color/green_200"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenir"
+                            android:lineSpacingExtra="4dp"
+                            android:paddingHorizontal="27dp"
+                            android:paddingVertical="22dp"
+                            android:text="@string/total_numbers_of_live_jobs_today"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/avenir"
+                            android:gravity="end"
+                            android:lineSpacingExtra="2dp"
+                            android:paddingHorizontal="27dp"
+                            android:paddingVertical="22dp"
+                            android:text="@string/_75"
+                            android:textColor="@color/black"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green_300"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="1dp"
+                    app:cardUseCompatPadding="true"
+                    app:strokeColor="@color/green_200"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/avenir"
+                            android:lineSpacingExtra="@dimen/_4sdp"
+                            android:paddingHorizontal="27dp"
+                            android:paddingVertical="22dp"
+                            android:text="@string/job_referrals_received"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16ssp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="28dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_corner"
+                            android:fontFamily="@font/avenir"
+                            android:gravity="center"
+                            android:lineSpacingExtra="2dp"
+                            android:text="@string/_2"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="32sp"
+                            android:layout_height="32sp"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_weight="1"
+                            android:src="@drawable/baseline_keyboard_arrow_right_24" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/avenir"
+                        android:paddingHorizontal="24dp"
+                        android:text="@string/profile_completion_status"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="32sp"
+                        android:layout_height="32sp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="14dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24" />
+                </LinearLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="24dp"
+                    android:progress="78"
+                    app:indicatorColor="@color/green_400"
+                    app:trackColor="@color/gray"
+                    app:trackCornerRadius="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/avenir_book"
+                        android:paddingHorizontal="24dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/complete_your_profile_now"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/avenir"
+                        android:gravity="end"
+                        android:paddingHorizontal="24dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/_78"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerColor="@color/gray" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvJobs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/jobs_items" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- EditText -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toStartOf="@+id/materialCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:strokeColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:drawableStart="@drawable/icon_search"
+                android:drawablePadding="18dp"
+                android:hint="@string/search_by_postcode_or_town"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        style="@style/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/green_400"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir"
+                android:gravity="center"
+                android:paddingVertical="24dp"
+                android:text="@string/book_an_interview"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

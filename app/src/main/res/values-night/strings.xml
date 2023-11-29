@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification">Notification</string>
+    <string name="jobs">Jobs</string>
+    <string name="search_by_postcode_or_town">Search by postcode or town</string>
+    <string name="all">All</string>
+    <string name="live_in">Live-In</string>
+    <string name="overnight">Overnight</string>
+    <string name="hourly">Hourly</string>
+    <string name="total_numbers_of_live_jobs_today">Total numbers of live jobs \ntoday</string>
+    <string name="_2">2</string>
+    <string name="job_referrals_received">Job Referrals Received</string>
+    <string name="profile_completion_status">Profile completion status</string>
+    <string name="_78">78%</string>
+    <string name="complete_your_profile_now">Complete your profile now!</string>
+    <string name="_75">75</string>
+    <string name="location">Location</string>
+    <string name="number_of_hours_per_week">Number of hours per week</string>
+    <string name="m_n4">M\n4</string>
+    <string name="t_n">T\n-</string>
+    <string name="w_n">W\n-</string>
+    <string name="t_n4">T\n4</string>
+    <string name="f_n4">F\n4</string>
+    <string name="s_n4">S\n4</string>
+    <string name="sat_n4">S\n4</string>
+    <string name="driver_required">Driver Required</string>
+    <string name="female_carer">Female Carer</string>
+    <string name="book_an_interview">Book an Interview</string>
+</resources>
