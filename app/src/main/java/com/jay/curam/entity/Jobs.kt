@@ -1,4 +1,7 @@
 package com.jay.curam.entity
 
-class Jobs {
-}
+data class Jobs (
+ val jobName:String,
+    val jobLocation:String,
+    val jobDistance:Int
+)

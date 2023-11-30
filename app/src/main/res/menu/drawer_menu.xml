@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/find_jobs" />
+    <item
+        android:title="@string/favourite_jobs" />
+    <item
+        android:title="@string/messages" />
+    <item
+        android:title="@string/notifications" />
+    <item
+        android:title="@string/intro_meetings" />
+    <item
+        android:title="@string/service_agreements" />
+    <item
+        android:title="@string/shift_invoices" />
+    <item
+        android:title="@string/my_applied_jobs" />
+    <item
+        android:title="@string/my_recommendations" />
+    <item
+        android:title="@string/micro_team" />
+    <item
+        android:title="@string/earnings_calculator" />
+    <item
+        android:title="@string/learnings" />
+    <item
+        android:title="@string/how_curam_works" />
+    <item
+        android:title="@string/settings" />
+    <item
+        android:title="@string/terms_amp_conditions" />
+</menu>
