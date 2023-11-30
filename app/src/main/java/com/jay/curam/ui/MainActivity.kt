@@ -43,21 +43,27 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-//        val toggle = ActionBarDrawerToggle(
-//            this,
-//            binding.drawerLayout,
-//            R.string.navigation_drawer_open,
-//            R.string.navigation_drawer_close
-//        )
-//        binding.drawerLayout.addDrawerListener(toggle)
-//        toggle.syncState()
-//
-//        binding.tvMenu.setOnClickListener {
-//            if (!binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-//                binding.drawerLayout.openDrawer(GravityCompat.START)
-//            }
-//        }
+//        val headerViewListAdapter=binding.navView.getHeaderView(0)
+        val toggle = ActionBarDrawerToggle(
+            this,
+            binding.drawerLayout,
+            R.string.navigation_drawer_open,
+            R.string.navigation_drawer_close
+        )
+        binding.drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
 
+        binding.tvMenu.setOnClickListener {
+            if (!binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                binding.drawerLayout.closeDrawer(GravityCompat.START)
+            }else{
+                binding.drawerLayout.openDrawer(GravityCompat.START)
+            }
+        }
+
+        binding.navView.setNavigationItemSelectedListener {
+            binding.drawerLayout.closeDrawer(GravityCompat.START)
+            true
+        }
     }
-
 }
