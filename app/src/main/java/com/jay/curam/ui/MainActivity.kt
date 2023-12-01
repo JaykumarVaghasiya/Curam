@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.jay.curam.BookInterview
 import com.jay.curam.R
 import com.jay.curam.adapters.JobsAdapter
 import com.jay.curam.databinding.ActivityMainBinding
@@ -66,7 +67,7 @@ class MainActivity : AppCompatActivity(),JobsAdapter.OnJobListener {
         }
 
         binding.btBookInterview.setOnClickListener {
-            val intent=Intent(this,BookAnInterview::class.java)
+            val intent=Intent(this, BookInterview::class.java)
             startActivity(intent)
         }
     }

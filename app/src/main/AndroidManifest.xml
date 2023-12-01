@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Curam"
         tools:targetApi="31">
         <activity
+            android:name=".BookInterview"
+            android:exported="false" />
+        <activity
             android:name=".ui.CuramSplash"
             android:exported="true"
             android:theme="@style/Theme.RemoveSplashScreenTheme">
@@ -22,15 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.BookAnInterviewScreen2"
-            android:exported="false" />
-        <activity
-            android:name=".ui.BookAnInterview"
-            android:exported="false" />
+
         <activity
             android:name=".ui.MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
     </application>
 
 </manifest>

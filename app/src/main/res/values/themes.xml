@@ -66,6 +66,8 @@
 
 
 
+
+
     <style name="App.ToolbarMenuItem" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
         <item name="android:textSize">14sp</item>
         <item name="textAllCaps">true</item>

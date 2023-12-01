@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BookAnInterview">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_2"
+                android:textColor="@color/green_400"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/confirmatory_nstatements"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/materialTextView3"
+                app:layout_constraintStart_toStartOf="@+id/materialTextView3"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/green_curve_up"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="28dp"
+                android:fontFamily="@font/avenir"
+                android:text="@string/i_confirm_i_will_be_self_employed_or_trade_through_a_limited_company_whilst_n_transacting_via_the_curamcare_platform"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <include
+                android:id="@+id/decisionLayout"
+                layout="@layout/decision"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/materialTextView18"
+                app:layout_constraintStart_toStartOf="@+id/materialTextView18"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView18" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/avenir"
+                android:text="@string/it_is_my_responsibility_to_set_my_own_rates_on_the_curamcare_platform"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/decisionLayout"
+                app:layout_constraintStart_toStartOf="@+id/decisionLayout"
+                app:layout_constraintTop_toBottomOf="@+id/decisionLayout" />
+
+            <include
+                android:id="@+id/decisionLayout1"
+                layout="@layout/decision"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/materialTextView20"
+                app:layout_constraintStart_toStartOf="@+id/materialTextView20"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView20" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/avenir"
+                android:text="@string/curam_s_self_employed_carer_insurance_is_only_valid_for_care_work_transacted_via_the_curamcare_platform"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/decisionLayout1"
+                app:layout_constraintStart_toStartOf="@id/decisionLayout1"
+                app:layout_constraintTop_toBottomOf="@+id/decisionLayout1" />
+
+            <include
+                android:id="@+id/decisionLayout2"
+                layout="@layout/decision"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/materialTextView21"
+                app:layout_constraintStart_toStartOf="@+id/materialTextView21"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView21" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/avenir"
+                android:text="@string/i_confirm_i_will_be_self_employed_or_trade_through_a_limited_company_whilst_n_transacting_via_the_curamcare_platform"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/decisionLayout2"
+                app:layout_constraintStart_toStartOf="@+id/decisionLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/decisionLayout2" />
+
+            <include
+                android:id="@+id/decisionLayout3"
+                layout="@layout/decision"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/materialTextView22"
+                app:layout_constraintStart_toStartOf="@+id/materialTextView22"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView22" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btConfirmandProceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="42dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/green_400"
+                android:paddingHorizontal="77dp"
+                android:paddingVertical="17dp"
+                android:text="@string/confirm_amp_proceed"
+                android:textColor="@color/white"
+                app:cornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/decisionLayout3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

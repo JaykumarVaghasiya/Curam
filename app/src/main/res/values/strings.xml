@@ -84,4 +84,6 @@
     <string name="curam">Curam</string>
     <string name="for_carers">For Carers</string>
     <string name="earn_more_live_more_n_with_curam">Earn more, live more \n with Curam</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
