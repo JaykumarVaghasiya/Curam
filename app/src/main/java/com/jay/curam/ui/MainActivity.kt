@@ -1,6 +1,8 @@
 package com.jay.curam.ui
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -11,10 +13,10 @@ import com.jay.curam.adapters.JobsAdapter
 import com.jay.curam.databinding.ActivityMainBinding
 import com.jay.curam.entity.Jobs
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),JobsAdapter.OnJobListener {
 
-    lateinit var binding: ActivityMainBinding
-    lateinit var jobsAdapter: JobsAdapter
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var jobsAdapter: JobsAdapter
     private val jobsList = listOf(
         Jobs("Hourly ongoing care required in London", "London", 1),
         Jobs("Live-in ongoing care required in Bristol", "Bristol", 2),
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         Jobs("Hourly ongoing care required in London", "London", 2),
     )
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -34,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 return false
             }
         }
-        jobsAdapter = JobsAdapter(this, jobsList)
+        jobsAdapter = JobsAdapter(this, jobsList,this)
         binding.rvJobs.adapter = jobsAdapter
         binding.rvJobs.addItemDecoration(
             DividerItemDecoration(
@@ -54,16 +57,21 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
 
         binding.tvMenu.setOnClickListener {
-            if (!binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-                binding.drawerLayout.closeDrawer(GravityCompat.START)
-            }else{
                 binding.drawerLayout.openDrawer(GravityCompat.START)
-            }
         }
 
         binding.navView.setNavigationItemSelectedListener {
             binding.drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
+
+        binding.btBookInterview.setOnClickListener {
+            val intent=Intent(this,BookAnInterview::class.java)
+            startActivity(intent)
+        }
+    }
+
+    override fun onJobClicked(jobs: Jobs) {
+        Toast.makeText(this,jobs.jobName,Toast.LENGTH_SHORT).show()
     }
 }

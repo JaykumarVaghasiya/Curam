@@ -28,7 +28,11 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
-
+    <style name="Theme.RemoveSplashScreenTheme" parent="@style/Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
     <style name="NavigationDrawerStyle">
 
         <item name="android:textSize">20sp</item><!-- text size in menu-->
