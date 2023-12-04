@@ -7,17 +7,19 @@
     android:background="@color/white"
     tools:context=".ui.CuramSplash">
 
-
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="268dp"
+        android:foreground="?attr/selectableItemBackground"
         android:src="@drawable/curam_logo_green"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView29"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView25"
@@ -85,11 +87,15 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.025" />
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView29"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
@@ -102,9 +108,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextView28"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
